@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/plan-creator">About</router-link>
   </div>
   <router-view/>
 </template>
@@ -26,5 +26,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+table, tbody, td, th {
+  user-select: none;
 }
 </style>
