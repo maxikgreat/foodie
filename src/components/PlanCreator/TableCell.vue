@@ -9,18 +9,19 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 
-interface TableCellProps {
-  activeColor: string;
-  isMouseDown: boolean;
-}
-
 export default defineComponent({
   name: 'TableCell',
   props: {
-    activeColor: String,
-    isMouseDown: Boolean,
+    activeColor: {
+      type: String,
+      required: true,
+    },
+    isMouseDown: {
+      type: Boolean,
+      required: true,
+    },
   },
-  setup(props: TableCellProps) {
+  setup(props) {
     const backgroundColor = ref('#fff');
 
     const changeColor = (exact = false) => {

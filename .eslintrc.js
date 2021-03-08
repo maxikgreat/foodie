@@ -14,7 +14,7 @@ module.exports = {
   rules: {
     'class-methods-use-this': 0,
     'max-len': [
-      'error',
+      'warn',
       {
         code: 150,
         ignoreComments: true,
